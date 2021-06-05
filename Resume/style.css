@@ -1,0 +1,43 @@
+.whole_file{
+    width: 800px;
+    border: 4px solid rgb(121, 121, 221);
+    height: 80vh;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 5%;
+    padding-left: 5rem;
+    padding-top: 5rem;
+}
+
+.Name{
+    text-align: center;
+    font-size: 3rem;
+    border: .2rem solid white;
+    background-color: white;
+    margin:-12% 25% 4rem 28%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 28%;
+   
+}
+
+.left_section{
+    float: left;
+    border-right: .3rem rgb(121, 121, 221) solid;
+    height: 80%;
+    width: 45%;
+   position: relative;
+   padding: 4px 9px;
+}
+
+.right_section{
+    float: right;
+    
+    height: 80%;
+    width: 45%;
+    position: relative;
+    padding: 4px 14px;
+}
+.work{
+    margin-bottom: 5rem;
+}
