@@ -18,6 +18,4 @@ function deleteChar(){
     let result=number.value;
     result=result.slice(0,-1)
     number.value=result;
-    
-  
 }
