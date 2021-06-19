@@ -1,50 +1,24 @@
-const booked=document.getElementById("booked");
-const remaining=document.getElementById("remaining");
-const seats=document.querySelectorAll(".sqare")
+const container=document.querySelector(".container");
 
+const defaultWhite = [
+	129, 130, 148, 149, 150, 151, 167, 168, 169, 170, 171, 172, 186, 187, 189,
+	190, 192, 193, 206, 207, 208, 209, 210, 211, 212, 213, 228, 231, 247, 249,
+	250, 252, 266, 268, 271, 273,
+];
 
-let book=0
-let remain=64
-booked.textContent=book;
-remaining.textContent=remain;
-const shows=document.querySelectorAll(".seatdetail")
-shows.forEach((show)=>{
-    show.addEventListener("click",function(){
-    if(show.classList.contains("seatbooked")){
-        show.classList.remove("seatbooked")
-        show.src="./image/empty-seat.png";
-        book--;
-        remain++;
-        booked.textContent=book;
-        remaining.textContent=remain;
-
-    } else{
-        show.classList.add("seatbooked");
-        show.src="./image/booked-seat.png";
-        book++;
-        remain--;
-        booked.textContent=book;
-        remaining.textContent=remain;
-
+for(let i=0;i<400;i++){
+    container.innerHTML+='<div class="square"></div>';
+}
+const square=document.querySelectorAll(".square")
+for(let i=0;i<400;i++){
+    if(defaultWhite.includes(i)){
+        // Do Nothing
+    }else{
+        square[i].classList.add("bg-red");
     }
+}
+square.forEach((block)=>{
+    block.addEventListener("click",()=>{
+        block.classList.contains("bg-red")?block.classList.remove("bg-red"):block.classList.add("bg-red");
     })
 })
-
-// seats.forEach((seat)=>{
-//     seat.addEventListener("click",function(){
-//         // seat.style.background=(seat.style.background == "white" ? "red" : "white")
-//     if(seat.classList.contains("booked")){
-//         seat.classList.remove("booked")
-//         book--;
-//         remain++;
-//         booked.textContent=book;
-//         remaining.textContent=remain;
-//     } else{
-//         seat.classList.add("booked")
-//         book++;
-//         remain--;
-//         booked.textContent=book;
-//         remaining.textContent=remain;
-//     }
-//     })
-// })

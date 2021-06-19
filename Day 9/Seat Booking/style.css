@@ -1,0 +1,40 @@
+.screen{
+    width: 40%;
+    
+    margin: auto;
+    
+
+    border-bottom: 15px solid #555;
+    border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+    margin-bottom: 50px; 
+}
+.box{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 400px;
+    border: 3px solid black;
+    column-gap: 8px;
+    margin: auto;
+    padding: 2px 14px;
+    justify-content: space-between;
+}
+
+.sqare{
+    width: 30px;
+    height: 30px;
+    border: 2px solid blue;
+}
+
+.seatinfo{
+    border: 3px solid rgb(27, 0, 44);
+    border-radius: 10%;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin: 5px auto;
+    padding: 3px;
+}
+img{
+    width: 40px;
+}
