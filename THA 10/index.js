@@ -1,4 +1,6 @@
 function playgame(){
+    document.querySelector(".deck").classList.remove("Fadein")
+  
     const cards=document.querySelectorAll(".card")  //Select all card
     const move=document.getElementById("moves")        // Moves Entry
     const congras=document.getElementById("popup1") //Congratulations Msg
