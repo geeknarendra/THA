@@ -36,7 +36,7 @@ function showTask(){
         task+=`<tr class="row">
         <td>${index+1}.</th>
         <td>${item}</td>
-        
+        <td class="complete"><label><input type="checkbox" > Complete</label></td>
         <td><button class="deletebtn" onclick="deleteTask(${index})">Delete</button></td>
     </tr>`;
     });
