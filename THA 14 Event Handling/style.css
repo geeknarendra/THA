@@ -1,0 +1,14 @@
+.preloader{
+    
+    visibility: visible;
+    
+}
+.hide{
+    visibility: hidden;
+ }
+
+.ResizeWin{
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 500;
+}

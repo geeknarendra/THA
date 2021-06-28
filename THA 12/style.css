@@ -68,12 +68,12 @@ body{
     display: grid;
     background-color: rgba(128, 128, 128, 0.219);
     justify-content: center;
-    width: 100%;
     text-align: justify;
+
     padding: 12px 10px;
     border-top:rgba(0, 0, 0, 0.521) 1px solid ;
     font-size: 1.5rem;
-    grid-template-columns: 0.2fr 5fr 1fr 1fr;
+    grid-template-columns: 0.2fr 2.5fr 1fr 1fr;
     margin: 2px;
     background: rgba(204, 203, 203, 0.233);
 }
