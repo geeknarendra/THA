@@ -7,7 +7,7 @@
 
 body{
     
-    background: url("./background.jpg");
+    background-image: url('./background.jpg');
     background-size:cover;
     color: blanchedalmond;
     text-align: center;
