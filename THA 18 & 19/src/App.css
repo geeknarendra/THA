@@ -1,0 +1,14 @@
+.chessBoard{
+  width: 160px;
+  height: 160px;
+  display: grid;
+  grid-template-columns: repeat(8,20px);
+  border: 10px solid black;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.State{
+  text-align: center;
+}
+
