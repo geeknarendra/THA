@@ -11,7 +11,7 @@ function Calorie({food,calorie,list,setList,index}){
                 return item
             }
         })
-        setList(newList)
+        // setList(newList)
     }
     
 
