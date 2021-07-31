@@ -7,7 +7,7 @@ export default function Footer() {
         <>
             <div className="bg-info d-flex justify-content-evenly px-5 py-5" >
                 <div className="mx-5 w-50" >
-                    <h2>Parter With Business Leader</h2>
+                    <h2>Partner With Business Leader</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quasi ipsam voluptate, cum, sed, laboriosam explicabo magni similique dolorum repudiandae debitis minus rem fugit ad! Distinctio possimus unde itaque vero.</p>
                 </div>
                 <a className="btn btn-danger fs-4 h-50 my-5" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" >

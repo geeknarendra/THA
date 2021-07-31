@@ -1,4 +1,5 @@
-import Background from '../images/img1.jpg'
+
+import Background from "../images/img1.jpg";
 export default function Home(){
  
 
