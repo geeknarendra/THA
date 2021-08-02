@@ -1,0 +1,42 @@
+
+
+/* Form */
+
+
+form{
+    display: flex;
+    width: 30%;
+    margin:auto;
+    justify-content:space-evenly
+}
+form input{
+    width: 400px;
+}
+form .select{
+    width: 50px;
+}
+
+/* Todo List */
+/* .completed{
+    text-decoration-line: line-through;
+    opacity: 0.5;
+} */
+input[type=checkbox] {
+    zoom: 2.5;
+    
+}
+
+.item-enter {
+    opacity: 0;
+  }
+  .item-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  .item-exit {
+    opacity: 1;
+  }
+  .item-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+  }
