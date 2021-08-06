@@ -1,23 +1,11 @@
-import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addCity, addCityData } from "./actions";
 import "./App.css";
 
 function App() {
-  let [city, setCity] = useState("");
-  let [cityData, setCityData] = useState({});
-
-  function updateCityData() {
-    fetch(
-      `https://api.weatherapi.com/v1/current.json?key=d12f8ac96da344e0a93141803210408&q=${city}`
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        setCityData(data);
-      });
-  }
-
-  useEffect(() => {
-    updateCityData();
-  }, []);
+  const city = useSelector((state) => state.addCity);
+  const cityData = useSelector((state) => state.addCityData);
+  const dispatch = useDispatch();
 
   return (
     <div className="app">
@@ -37,12 +25,12 @@ function App() {
             placeholder="enter city"
             value={city}
             onChange={(e) => {
-              setCity(e.target.value);
+              dispatch(addCity(e.target.value));
             }}
             onKeyPress={(e) => {
               if (e.key === "Enter") {
-                updateCityData();
-                setCity("");
+                dispatch(addCityData(city));
+                dispatch(addCity(""));
               }
             }}
           />
@@ -50,8 +38,8 @@ function App() {
           <button
             id="submit"
             onClick={() => {
-              updateCityData();
-              setCity("");
+              dispatch(addCityData(city));
+              dispatch(addCity(""));
             }}
           >
             go
@@ -66,6 +54,7 @@ function App() {
           )}
         </div>
       </header>
+
       {cityData.location ? (
         <div className="wrapper">
           <div className="cube">
