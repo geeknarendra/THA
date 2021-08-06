@@ -60,7 +60,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  width: 400px;
+  width: 600px;
   height: 200px;
   border-radius: 5px;
   background: var(--white);
@@ -68,8 +68,8 @@ header {
 
 }
 #status {
-  height: 120px;
-  width: 120px;
+  height: 50px;
+  width: 50px;
   border-radius: 10px;
 }
 #error{
@@ -78,7 +78,7 @@ header {
 }
 .col {
   bckground: green;
-  width: 100px;
+  width: 180px;
   height: 120px;
   display: flex;
   flex-direction: column;
@@ -91,7 +91,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  width: 200px;
   height: 80px;
   text-align: center;
 }
@@ -122,6 +122,9 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+}
+.cube-row p{
+  font-size: 20px;
 }
 .highlight {
   border: 20px solid var(--active-blur);
