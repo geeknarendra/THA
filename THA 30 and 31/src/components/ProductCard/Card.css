@@ -1,0 +1,113 @@
+.card{
+    position: relative;
+    width:30vw;
+    height:65vh;
+    transform: scale(1);
+   transition: all 0.3s linear;
+   border-radius: 0.5rem;
+   overflow: hidden;
+   border: 1px solid lightgray;
+   margin-bottom: 2.5rem;
+   text-decoration: none;
+}
+
+.card:hover{
+   
+    box-shadow: 3px 2px 26px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 2px 26px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 2px 26px -3px rgba(0,0,0,0.75);
+}
+
+.card .image{
+    width: 100%;
+    height:62%;
+    background-color:white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px double black;
+}
+
+.card .image img{
+    height:100%;
+    object-fit: cover;
+}
+
+.card .content{
+   
+    height: 40%;
+    padding: 1.5rem;
+    color: white;
+    background-color: rgb(72, 72, 72);
+    text-decoration: none;
+}
+
+.card .content h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+}
+.card .content p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+.card .content h4{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+/* .card .content h5{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05rem;
+} */
+
+
+.heart {
+    width: 80px;
+    height: 80px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+    position: absolute;
+    right: 0.2rem;
+    top:-2rem;
+    z-index:3;
+
+  }
+  
+ 
+.heart.is_active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+}
+
+
+.btnDiv{
+    position: absolute;
+    bottom: 1.8rem;
+    right:4rem;
+    background-color:white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  
+}
+
+.moreDetailBtn{ 
+    color:#222;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.btnDiv:hover{
+    background-color: rgb(208, 203, 203);
+    color:white;
+    border: 1px solid white;
+}

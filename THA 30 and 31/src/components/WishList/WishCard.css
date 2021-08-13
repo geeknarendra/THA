@@ -1,0 +1,51 @@
+.wishCard{
+    background: rgb(240, 238, 238);
+    width:40vw;
+    height:30vh;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: sp;
+    box-shadow: 3px 2px 26px -2px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 3px 2px 26px -2px rgba(255,255,255,0.75);
+    -moz-box-shadow: 3px 2px 26px -2px rgba(255,255,255,0.75);
+    margin-bottom: 2rem;
+}
+
+.wishCard .wishCard_image{
+    width: 35%;
+    background:white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.wishCard .wishCard_image img{
+    object-fit: cover;
+    height:100%;
+    width:100%;
+}
+
+.wishCard .wishCard_content{
+    padding: 2rem 1rem;
+    margin-left: 1rem;
+}
+
+.wishCard .wishCard_content h1{
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+
+.wishCard .wishCard_content p{
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+
+.wishCard .wishCard_content .deleteIcon{
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+

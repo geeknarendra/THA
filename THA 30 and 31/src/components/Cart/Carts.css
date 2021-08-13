@@ -1,0 +1,51 @@
+.carts{
+    background-color:#222;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    right:0;
+    width:40vw;
+    z-index: 10;
+    position: fixed;
+    transition: all 0.3s linear;
+   display: block;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.carts .topPart{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+height:8vh;
+padding: 2rem;
+border-bottom:2px double #fff;
+margin-bottom: 2rem;
+color: white;
+}
+
+.carts .topPart h1{
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+}
+
+.carts .topPart .xicon{
+    font-size: 3.5rem;
+    cursor: pointer;
+}
+
+
+.carts .cartItem{
+    /* background-color: aquamarine; */
+    height: calc(100vh - 8vh);
+    padding: 2rem;
+    overflow: auto;
+}
+
+.carts.active{
+   transform: translateX(550px);
+   display: none;
+}

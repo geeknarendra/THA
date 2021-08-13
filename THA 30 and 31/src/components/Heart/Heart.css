@@ -1,0 +1,20 @@
+.heart {
+    width: 80px;
+    height: 80px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+    position: absolute;
+    right: 0.2rem;
+    top:-2rem;
+    z-index:3;
+
+  }
+  
+ 
+.heart.is_active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+}

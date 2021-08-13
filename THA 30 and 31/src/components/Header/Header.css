@@ -1,0 +1,53 @@
+.header{
+display: flex;
+justify-content: space-between;
+background-color:#4b4b4b;
+color:white;
+padding: 1rem 2rem;
+font-size: 1.5rem;
+align-items: center;
+height: calc(100vh - 90vh);
+width: 100vw;
+}
+
+.header h1{
+    margin-left: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.header .icons{
+    display: flex;
+   
+    height: 100%;
+    width: calc(100% - 80%);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header .icons .wishIcon{
+    text-decoration: none;
+    color:white;
+}
+
+.header .icons .wishIcon .icon{
+    font-size: 4rem;
+    margin-top: 0.2rem;
+}
+
+.header .icons a:first-child{
+    color:red;
+}
+
+.header .icons .icon2{
+    font-size: 4rem;
+    margin-top: 0.2rem;
+    color:lightblue;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
