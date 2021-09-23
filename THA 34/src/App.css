@@ -1,0 +1,57 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+.counter {
+  /* margin: 0px auto; */
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.counter h1, .notes h1 {
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 2.2em;
+}
+
+.counter button, .notes button {
+  padding: 5px 10px;
+}
+
+.counter span {
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.notes {
+  text-align: center;
+}
+
+.notes input {
+  outline: none;
+  padding: 5px;
+  width: 250px
+}
+
+.notes ul {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes li {
+  display: inline-block;
+}
